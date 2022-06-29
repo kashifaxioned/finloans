@@ -1,0 +1,24 @@
+{
+  "name": "finloans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kashifaxioned/finloans.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kashifaxioned/finloans/issues"
+  },
+  "homepage": "https://github.com/kashifaxioned/finloans#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
