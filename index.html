@@ -15,15 +15,18 @@
   <!--font-awesome link for icons-->
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="css/style.css" >
 </head>
 
 <body>
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
+    <header class="header">
       <div class="wrapper">
         <h1 class="logo"><a href="#FIXME" title="Logo"><img src="https://via.placeholder.com/206x63.png?text=Finloans" alt="Finloans Logo"></a></h1>
         <div class="header__menu">
@@ -33,14 +36,14 @@
               <a class="header__menu__list__item__name" href="#FIXME" title="Home">home</a>
             </li>
             <li class="header__menu__list__item">
-              <a href="#FIXME" title="Loan">loan</a>
+              <a class="header__menu__list__item__name" href="#FIXME" title="Loan">loan</a>
             </li>
             <li class="header__menu__list__item">
               <a class="header__menu__list__item__name" href="#FIXME" title="About">about</a>
             </li>
             <li class="header__menu__list__item">
               <ul class="header__menu__list__item__dropwdown">
-                <span class="header__menu__list__item__name">page</span>
+                <span class="header__menu__list__item__dropdown__name">pages</span>
                 <li class="header__menu__list__item__dropdown__item">page1</li>
                 <li class="header__menu__list__item__dropdown__item">page2</li>
                 <li class="header__menu__list__item__dropdown__item">page3</li>
@@ -48,7 +51,7 @@
             </li>
             <li class="header__menu__list__item">
               <ul class="header__menu__list__item__dropwdown">
-                <span class="header__menu__list__item__name">blog</span>
+                <span class="header__menu__list__item__dropdown__name">blog</span>
                 <li class="header__menu__list__item__dropdown__item">blog1</li>
                 <li class="header__menu__list__item__dropdown__item">blog2</li>
                 <li class="header__menu__list__item__dropdown__item">blog3</li>
@@ -58,12 +61,12 @@
               <a class="header__menu__list__item__name" href="#FIXME" title="FAQ">FAQ</a>
             </li>
             <li class="header__menu__list__item">
-              <a class="header__menu__list__item__name" href="#FIXME" title="Contact">about</a>
+              <a class="header__menu__list__item__name" href="#FIXME" title="Contact">contact</a>
             </li>
           </ul>
         </div>
         <span class="header__open">open</span>
-        <span class="header__contact__number">+1020126983</span>
+        <span class="header__contact__number">+10 201 269 832</span>
         <span class="header__apply__btn">apply for a loan</span>
       </div>
     </header>
@@ -75,25 +78,25 @@
         <div class="wrapper">
           <div class="banner__text">
             <h2 class="banner__text__info">Get Loan for your Business growth or startup</h2>
-            <span class="banner__text__btn">how it works</span>
+            <a class="banner__text__btn" href="#FIXME" title="How It Works">how it works</a>
           </div>
           <div class="banner__form">
             <h3 class="banner__form__heading">How much do you want?</h3>
             <p class="banner__form__info">We provide online instant cash loans with quick</p>
-            <ul class="banner__form__amount">
-              <span class="banner__form__amount__name">amount</span>
-              <li class="banner__form__amount__list"><span>100&#36;</span></li>
-              <li class="banner__form__amount__list"><span>200&#36;</span></li>
-              <li class="banner__form__amount__list"><span>300&#36;</span></li>
+            <ul class="banner__form__dropdown">
+              <span class="banner__form__dropdown__name">amount</span>
+              <li class="banner__form__dropdown__list"><span>100&#36;</span></li>
+              <li class="banner__form__dropdown__list"><span>200&#36;</span></li>
+              <li class="banner__form__dropdown__list"><span>300&#36;</span></li>
             </ul>
-            <ul class="banner__form__month">
-              <span class="banner__form__month__name">month</span>
-              <li class="banner__form__month__list">january</li>
-              <li class="banner__form__month__list">febrauary</li>
-              <li class="banner__form__month__list">march</li>
+            <ul class="banner__form__dropdown">
+              <span class="banner__form__dropdown__name">month</span>
+              <li class="banner__form__dropdown__list">january</li>
+              <li class="banner__form__dropdown__list">febrauary</li>
+              <li class="banner__form__dropdown__list">march</li>
             </ul>
-            <p class="banner__form__amount">You have to pay: 0&#36;</p>
-            <span class="banner__form__btn">continue</span>
+            <p class="banner__form__amount">You have to pay: &#36;0</p>
+            <button class="banner__form__btn">continue</button>
           </div>
         </div>
       </div>
