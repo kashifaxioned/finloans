@@ -1,0 +1,88 @@
+@import "variables";
+@import "common";
+
+.header {
+  position: relative;
+  .wrapper {
+    box-sizing: border-box;
+    width: 95%;
+    padding-right: 21px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    @include flex(auto, auto, center)
+  }
+  &__open, &__close{ display: none; }
+
+  &__menu {
+    margin: 0 13.1% 0 21%;
+    flex-basis: 34.8%;
+
+    &__list {
+     @include flex(auto, space-between, auto);
+
+      &__item__name {
+        display: block;
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+
+        &:hover { 
+          color: $secondary-color;
+          transform: scale(1.1); 
+        }
+      }
+
+      &__item__dropdown {
+        
+        &__item { display: none }
+
+        &__name {
+          cursor: pointer;
+          @extend .header__menu__list__item__name;
+          
+          &::after {
+            margin-left: 5px;
+            vertical-align: bottom;
+            @include icon ("\f107", 20px, 100, $primary-color)
+          }
+        }
+      }
+     
+    }
+  }
+
+  &__contact__number {
+    margin-right: 16px;
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: 600;
+
+    &::before {
+      margin-right: 12px;
+      vertical-align: bottom;
+      @include icon ("\f095", 20px, initial, $secondary-color)
+    }
+  }
+
+  &__apply__btn {
+    padding: 20px 12px;
+    border: 2px solid $secondary-color;
+    border-radius: 5px;
+    color: $secondary-color;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+}
+
+ 
+

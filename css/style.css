@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+input[type='radio'] {
+  vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer; }
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit; }
+
+em {
+  font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle; }
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0; }
+
+sup {
+  top: -.7em; }
+
+sub {
+  bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " "; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none; }
+
+li {
+  display: inline-block;
+  list-style-type: none; }
+
+.container {
+  position: relative; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 81.2%; }
+
+.header {
+  position: relative; }
+  .header .wrapper {
+    box-sizing: border-box;
+    width: 95%;
+    padding-right: 21px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+  .header__open, .header__close {
+    display: none; }
+  .header__menu {
+    margin: 0 13.1% 0 21%;
+    flex-basis: 34.8%; }
+    .header__menu__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch; }
+      .header__menu__list__item__name, .header__menu__list__item__dropdown__name {
+        display: block;
+        color: #aab2b6;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize; }
+        .header__menu__list__item__name:hover, .header__menu__list__item__dropdown__name:hover {
+          color: #58d4d6;
+          transform: scale(1.1); }
+      .header__menu__list__item__dropdown__item {
+        display: none; }
+      .header__menu__list__item__dropdown__name {
+        cursor: pointer; }
+        .header__menu__list__item__dropdown__name::after {
+          margin-left: 5px;
+          vertical-align: bottom;
+          content: "";
+          color: #aab2b6;
+          font-family: "FontAwesome";
+          font-size: 20px;
+          font-weight: 100; }
+  .header__contact__number {
+    margin-right: 16px;
+    color: #aab2b6;
+    font-size: 18px;
+    font-weight: 600; }
+    .header__contact__number::before {
+      margin-right: 12px;
+      vertical-align: bottom;
+      content: "";
+      color: #58d4d6;
+      font-family: "FontAwesome";
+      font-size: 20px;
+      font-weight: initial; }
+  .header__apply__btn {
+    padding: 20px 12px;
+    border: 2px solid #58d4d6;
+    border-radius: 5px;
+    color: #58d4d6;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize; }
+    .header__apply__btn:hover {
+      background-color: #58d4d6;
+      color: #aab2b6; }
+
+.banner {
+  background-image: url("../../image/bg/overaly.png"), url("../../image/bg/1.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .banner .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17.6rem 0; }
+  .banner__text {
+    flex-basis: 46%; }
+    .banner__text__info {
+      font-size: 5.1rem;
+      line-height: 1.25; }
+    .banner__text__btn {
+      padding: 18px 42px 23px 42px;
+      border: 1px solid #58d4d6;
+      border-radius: 5px;
+      background-color: #58d4d6;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: capitalize;
+      margin-top: 3.7rem; }
+      .banner__text__btn:hover {
+        background-color: transparent;
+        color: #58d4d6; }
+  .banner__form {
+    box-sizing: border-box;
+    padding: 68px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #aab2b6;
+    text-align: center; }
+    .banner__form__heading {
+      padding: 0 13px;
+      color: initial;
+      font-size: 2.6rem;
+      font-weight: 400; }
+    .banner__form__info {
+      padding: 36px 0;
+      font-size: 1.4rem;
+      font-weight: 500; }
+    .banner__form__dropdown {
+      border: 1px solid #aab2b6;
+      padding: 23px 33px 23px 24px;
+      border-radius: 5px;
+      margin: 20px 0; }
+      .banner__form__dropdown__name {
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end; }
+        .banner__form__dropdown__name::after {
+          content: "";
+          color: inherit;
+          font-family: "FontAwesome";
+          font-size: 24px;
+          font-weight: 500; }
+      .banner__form__dropdown__list {
+        display: none; }
+    .banner__form__amount {
+      padding: 35px 0 55px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: left; }
+    .banner__form__btn {
+      padding: 19px 0 23px 0;
+      border: 1px solid #58d4d6;
+      border-radius: 5px;
+      background-color: #58d4d6;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: capitalize;
+      width: 100%;
+      font-weight: 500;
+      text-align: center; }
+      .banner__form__btn:hover {
+        background-color: transparent;
+        color: #58d4d6; }

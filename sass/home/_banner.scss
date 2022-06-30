@@ -1,0 +1,84 @@
+@import "../common";
+
+.banner {
+  background-image: url("../../image/bg/overaly.png"), url("../../image/bg/1.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  .wrapper {
+    @include flex (auto, space-between, center);
+    padding: 17.6rem 0;
+  }
+
+  &__text {
+    flex-basis: 46%;
+    
+    &__info {
+      font-size: 5.1rem;
+      line-height: 1.25;
+    }
+
+    &__btn {
+      @include btn (18px, 42px, 23px, 42px);
+      margin-top: 3.7rem;
+    }
+  }
+
+  &__form {
+    box-sizing: border-box;
+    padding: 68px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: $primary-color;
+    text-align: center;
+    
+    &__heading {
+      padding: 0 13px;
+      color: initial;
+      font-size: 2.6rem;
+      font-weight: 400;
+    }
+
+    &__info {
+      padding: 36px 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    &__dropdown {
+      border: 1px solid $primary-color;
+      padding: 23px 33px 23px 24px;
+      border-radius: 5px;
+      margin: 20px 0;
+
+      &__name {
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        
+        @include flex (auto, space-between, flex-end);
+
+        &::after {
+          @include icon ("\f0d7", 24px, 500, inherit);
+        }
+      }
+      &__list { display: none; }
+    }
+
+    &__amount {
+      padding: 35px 0 55px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: left
+    }
+
+    &__btn {
+      @include btn (19px, 0, 23px, 0);
+      width: 100%;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+}

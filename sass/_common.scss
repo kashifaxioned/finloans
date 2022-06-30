@@ -1,0 +1,39 @@
+@import "variables";
+
+@mixin icon ($content, $font-size, $font-weight, $color) {
+  content: $content;
+  color: $color;
+  font-family: "FontAwesome";
+  font-size: $font-size;
+  font-weight: $font-weight;
+} 
+
+@mixin flex ($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  
+  @if $flex-direction != auto { flex-direction: $flex-direction }
+  @else { flex-direction: row }
+
+  @if $justify-content != auto { justify-content: $justify-content }
+  @else { justify-content: flex-start; }
+
+  @if $align-items != auto { align-items: $align-items; }
+  @else { align-items: stretch }
+}
+
+@mixin btn ($padding-top, $padding-right, $padding-bottom, $padding-left) {
+  padding: $padding-top $padding-right $padding-bottom $padding-left;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  background-color: $secondary-color;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: transparent;
+    color: $secondary-color;
+  }
+}
