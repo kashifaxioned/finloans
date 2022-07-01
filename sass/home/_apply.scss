@@ -1,0 +1,23 @@
+.apply {
+  padding: 11.62rem 0 12.18rem;
+  background-image: url("../../image/bg/overaly.png"), url("../../image/bg/1.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+
+  .wrapper {
+    @include flex (auto, space-between, center)
+  }
+
+  &__title {
+    flex-basis: 57.42%;
+    font-size: 3.8rem;
+    line-height: 1.4;
+  }
+
+  &__btn {
+    display: inline-block;
+    @include btn (24px, 42px, 24px, 42px)
+  }
+  
+}

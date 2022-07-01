@@ -203,6 +203,7 @@ li {
       border-radius: 5px;
       background-color: #58d4d6;
       color: #fff;
+      cursor: pointer;
       font-size: 22px;
       font-weight: 500;
       line-height: 1;
@@ -260,6 +261,7 @@ li {
       border-radius: 5px;
       background-color: #58d4d6;
       color: #fff;
+      cursor: pointer;
       font-size: 22px;
       font-weight: 500;
       line-height: 1;
@@ -338,6 +340,7 @@ li {
           border-radius: 5px;
           background-color: #58d4d6;
           color: #fff;
+          cursor: pointer;
           font-size: 22px;
           font-weight: 500;
           line-height: 1;
@@ -390,6 +393,7 @@ li {
       border-radius: 5px;
       background-color: #58d4d6;
       color: #fff;
+      cursor: pointer;
       font-size: 22px;
       font-weight: 500;
       line-height: 1;
@@ -556,3 +560,34 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch; }
+
+.apply {
+  padding: 11.62rem 0 12.18rem;
+  background-image: url("../../image/bg/overaly.png"), url("../../image/bg/1.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff; }
+  .apply .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .apply__title {
+    flex-basis: 57.42%;
+    font-size: 3.8rem;
+    line-height: 1.4; }
+  .apply__btn {
+    display: inline-block;
+    padding: 24px 42px 24px 42px;
+    border: 1px solid #58d4d6;
+    border-radius: 5px;
+    background-color: #58d4d6;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: capitalize; }
+    .apply__btn:hover {
+      background-color: transparent;
+      color: #58d4d6; }
