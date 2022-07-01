@@ -1,0 +1,45 @@
+.about-section {
+
+  .wrapper {
+    @include flex (auto, space-between, center)
+  }
+
+  &__image { flex-basis: 48.7%; }
+
+  &__text {
+    flex-basis: 42.2%;
+
+    &__title {
+      @include section-title;
+      text-transform: capitalize;
+    }
+
+    &__info {
+      @include section-info;
+      margin-top: 3.18rem;
+      line-height: 1.6;
+    }
+
+    &__list {
+      @include flex (column, auto, auto);
+      margin: 31px 0 85px;
+
+      &__item {
+        padding-bottom: 17px;
+        font-size: 1.45rem;
+        font-weight: 500;
+
+        &::before {
+          @include icon ("\f111", .7rem, 500, $dark-blue);
+          margin-right: 1.31rem;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    &__btn {
+      @include btn (18px, 43px, 24px, 41px);
+      box-sizing: border-box;
+    }
+  }
+}
