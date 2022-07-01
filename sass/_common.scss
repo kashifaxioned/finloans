@@ -37,3 +37,22 @@
     color: $secondary-color;
   }
 }
+
+@mixin section-title {
+  font-size: 3.9rem;
+}
+
+@mixin section-info {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: $info-text-color;
+}
+
+.underline {
+  width: 5.18rem;
+  height: 5px;
+  margin: 0 auto 14px;
+  display: block;
+  font-size: 0;
+  background-color: $secondary-color;
+}

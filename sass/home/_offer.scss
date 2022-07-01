@@ -1,0 +1,80 @@
+@import "../variables";
+@import "../common";
+
+.offer-section {
+  padding: 13.81rem 0 13rem;
+  text-align: center;
+
+  &__title { @include section-title; }
+
+  &__info { 
+    @include section-info; 
+    padding: 21px 0;
+  }
+
+  &__list {
+    @include flex (auto, space-between, auto);
+    margin-top: 6.69rem;
+
+    &__card {
+      box-sizing: border-box;
+      border-radius: 10px;
+      flex-basis: calc(33.33% - 27.3px);
+      background: linear-gradient(to bottom, #4286f5, #1e4680);
+      color: $primary-color;
+
+      &__header {
+
+        &__wrapper { padding: 4.25rem 13.9% 2.43rem; }
+
+        border-bottom: 1px solid $secondary-color;
+
+        &__title {
+          margin-bottom: 27px;
+          font-size: 1.3rem;
+          text-transform: capitalize;
+
+          &::before {
+            margin-bottom: 4rem;
+            display: block;
+            @include icon ("\f4c0", 4.5rem, 500, $primary-color)
+          }  
+        }
+        
+        &__price {
+          color: $secondary-color;
+          font-size: 2.6rem;
+        }
+      }
+
+      &__footer {
+        text-align: left;
+
+        &__wrapper { padding: 3.31rem 13.9% 4.25rem; }
+        
+        &__info {
+          margin-bottom: 50px;
+
+          &__item {
+            margin-bottom: 17px;
+            font-size: 1.4rem;
+
+            &::before {
+              @include icon ("\f111", .7rem, 500, $secondary-color);
+              margin-right: 14px;
+              vertical-align: middle;
+            }
+          }
+        }
+
+        &__btn {
+          width: 100%;
+          display: block;
+          text-align: center;
+          @include btn (23px, 0, 23px, 0)
+        }
+      }
+    }
+  }
+}
+

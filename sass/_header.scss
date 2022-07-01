@@ -10,7 +10,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 30px;
+    top: 1.87rem;
     @include flex(auto, auto, center)
   }
   &__open, &__close{ display: none; }
