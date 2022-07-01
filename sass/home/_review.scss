@@ -1,0 +1,87 @@
+.review {
+  padding: 12.93rem 0 15.25rem;
+
+  &__box {
+    @include flex (auto, space-between, center);
+
+    &__list {
+      @include flex (auto, auto, center);
+      flex-basis: 86%;
+
+      &__item {
+        @include flex (auto, space-between, center);
+
+        &__image {
+          position: relative;
+
+          & img {
+            border-radius: 50%;
+          }
+
+          &::after{
+            @include icon ("\f10d", 1.7rem, 500, #fff);
+            padding: 30px;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background-color: $secondary-color;
+          }
+        }
+
+        &__text {
+          flex-basis: 69.21%;
+
+          &__info {
+            font-size: 1.5rem;
+            line-height: 1.6;
+          }
+
+          &__author {
+            padding-top: 23px;
+            display: inline-block;
+            color: $info-text-color;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+          }
+        }
+
+        &:not(:first-child) { display: none; }
+      }
+
+    }
+
+    &__controller {
+      flex-basis: 4.32%;
+      gap: 14px;
+
+      &__right, &__left {
+        display: block;
+        text-indent: -999999px;
+
+        &::after {
+          padding: 21px 28px 27px;
+          border: 1px solid $primary-color;
+          border-radius: 50%;
+          background-color: $primary-color;
+          cursor: pointer;
+          float: right;
+          text-indent: 0;
+        }
+      }
+
+      &__right::after { 
+        @include icon ("\f054", 1.4rem, 500, $dark-blue); 
+        margin-bottom: 14px;
+      }
+
+      &__left::after { @include icon ("\f053", 1.4rem, 500, $dark-blue); }
+    }
+  }
+
+  &__clients {
+    padding-top: 16.06rem;
+    @include flex (auto, space-between, auto)
+  }
+}
