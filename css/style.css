@@ -591,3 +591,156 @@ li {
     .apply__btn:hover {
       background-color: transparent;
       color: #58d4d6; }
+
+.footer-section {
+  padding: 12.5rem 0 4.43rem; }
+  .footer-section__logo {
+    margin-bottom: 62px; }
+  .footer-section__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 16rem; }
+    .footer-section__list__contact-details {
+      flex-basis: 34.1%;
+      padding-right: 16.67%; }
+      .footer-section__list__contact-details__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding-bottom: 62px; }
+        .footer-section__list__contact-details__list li {
+          padding-bottom: 7px;
+          color: #aab2b6;
+          font-size: 1.2rem; }
+      .footer-section__list__contact-details__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch; }
+        .footer-section__list__contact-details__social__icon a {
+          width: 55px;
+          height: 55px;
+          border: 1px solid #aab2b6;
+          border-radius: 50%;
+          text-indent: -999999px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          .footer-section__list__contact-details__social__icon a.facebook::after {
+            content: "";
+            color: #aab2b6;
+            font-family: "FontAwesome";
+            font-size: 1.2rem;
+            font-weight: 400;
+            float: right;
+            text-indent: 0; }
+          .footer-section__list__contact-details__social__icon a.twitter::after {
+            content: "";
+            color: #aab2b6;
+            font-family: "FontAwesome";
+            font-size: 1.2rem;
+            font-weight: 400;
+            float: right;
+            text-indent: 0; }
+          .footer-section__list__contact-details__social__icon a.google::after {
+            content: "";
+            color: #aab2b6;
+            font-family: "FontAwesome";
+            font-size: 1.2rem;
+            font-weight: 400;
+            float: right;
+            text-indent: 0; }
+          .footer-section__list__contact-details__social__icon a.instagram::after {
+            content: "";
+            color: #aab2b6;
+            font-family: "FontAwesome";
+            font-size: 1.2rem;
+            font-weight: 400;
+            float: right;
+            text-indent: 0; }
+    .footer-section__list__services {
+      flex-basis: 17.31%;
+      margin-right: 8.2%; }
+      .footer-section__list__services__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding-bottom: 74px; }
+      .footer-section__list__services__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch; }
+        .footer-section__list__services__list__item, .footer-section__list__useful-links__list__item {
+          padding-bottom: 38px;
+          color: #aab2b6;
+          font-size: 1.1rem;
+          font-weight: 500; }
+    .footer-section__list__useful-links {
+      flex-basis: 16.86%;
+      margin-right: 8%; }
+      .footer-section__list__useful-links__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding-bottom: 74px; }
+      .footer-section__list__useful-links__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch; }
+        .footer-section__list__useful-links__list__item {
+          text-transform: capitalize; }
+    .footer-section__list__subscribe {
+      flex-basis: 31.65%; }
+      .footer-section__list__subscribe__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding-bottom: 54px; }
+      .footer-section__list__subscribe__form {
+        padding: 5px;
+        border: 1px solid #aab2b6;
+        border-radius: 5px;
+        margin-bottom: 34px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch; }
+        .footer-section__list__subscribe__form__input {
+          padding: 19px 18px;
+          border: none;
+          font-size: 1.3rem;
+          font-family: inherit;
+          outline: none; }
+        .footer-section__list__subscribe__form__btn {
+          padding: 20px 30px;
+          padding: 20px 30px 20px 30px;
+          border: 1px solid #4286f5;
+          border-radius: 5px;
+          background-color: #4286f5;
+          color: #fff;
+          cursor: pointer;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 1;
+          text-transform: capitalize;
+          font-size: 1.2rem; }
+          .footer-section__list__subscribe__form__btn:hover {
+            background-color: transparent;
+            color: #4286f5; }
+      .footer-section__list__subscribe__info {
+        color: #aab2b6;
+        font-size: 1.2rem;
+        line-height: 1.6; }
+  .footer-section__copyright {
+    color: #aab2b6;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center; }
+    .footer-section__copyright--blue {
+      color: #4286f5; }

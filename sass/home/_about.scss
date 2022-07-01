@@ -39,7 +39,7 @@
     }
 
     &__btn {
-      @include btn (18px, 43px, 24px, 41px);
+      @include btn (18px, 43px, 24px, 41px, $secondary-color);
       box-sizing: border-box;
     }
   }

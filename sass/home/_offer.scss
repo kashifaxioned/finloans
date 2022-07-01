@@ -69,7 +69,7 @@
           width: 100%;
           display: block;
           text-align: center;
-          @include btn (23px, 0, 23px, 0)
+          @include btn (23px, 0, 23px, 0, $secondary-color)
         }
       }
     }

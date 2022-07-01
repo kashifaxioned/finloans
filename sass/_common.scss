@@ -21,11 +21,11 @@
   @else { align-items: stretch }
 }
 
-@mixin btn ($padding-top, $padding-right, $padding-bottom, $padding-left) {
+@mixin btn ($padding-top, $padding-right, $padding-bottom, $padding-left, $color) {
   padding: $padding-top $padding-right $padding-bottom $padding-left;
-  border: 1px solid $secondary-color;
+  border: 1px solid $color;
   border-radius: 5px;
-  background-color: $secondary-color;
+  background-color: $color;
   color: #fff;
   cursor: pointer;
   font-size: 22px;
@@ -35,7 +35,7 @@
 
   &:hover {
     background-color: transparent;
-    color: $secondary-color;
+    color: $color;
   }
 }
 
@@ -47,6 +47,18 @@
   font-size: 1.4rem;
   font-weight: 500;
   color: $info-text-color;
+}
+
+@mixin social-icon ($content) {
+  @include icon ($content, 1.2rem, 400, $info-text-color);
+  float: right;
+  text-indent: 0;
+} 
+
+@mixin footer-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .underline {
