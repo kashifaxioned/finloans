@@ -1,0 +1,39 @@
+.queries-section {
+
+  .wrapper {
+    width: 100%;
+    margin-right: 11.39%;
+    @include flex (auto, auto, center)
+  }
+
+  &__text {
+    margin-left: 6.03%;
+    flex-basis: 34.59%;
+    &__title {
+      @include section-title
+    }
+
+    &__accordion {
+      @include flex (column, auto, auto);
+      width: 100%;
+      padding-top: 6.06rem;
+
+      &__item {
+        padding: 33px 0 20px;
+        border-bottom: 1px solid $info-text-color;
+        &__query {
+          font-size: 1.5rem;
+          font-weight: 500;
+          @include flex (auto, auto, auto);
+
+          &::before {
+            @include icon ("\f107", 1.5rem, 100, $info-text-color);
+            margin-right: 2rem;
+          }
+        }
+
+        &__answer { display: none; }
+      }
+    }
+  }
+}
